@@ -1,7 +1,7 @@
 main {
     display: grid;
     grid-template-columns: 150px 1fr;
-    grid-row: auto 1fr;
+    grid-template-rows: auto 1fr;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
     grid-row: 2;
     display: flex;
     flex-direction: column;
-    gap: 8;
+    gap: 8px;
     padding: 10px;
 
 }
@@ -37,7 +37,7 @@ header {
     #cartas {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
 }
 
 

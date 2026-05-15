@@ -35,7 +35,7 @@ class Carta {
         const suit = document.createElement('p');
         suit.textContent = `Palo: ${this.suit}`;
 
-        const value = documen.createElement('p');
+        const value = document.createElement('p');
         value.textContent = `Valor: ${this.value}`;
 
         const btnGuardar = document.createElement('button');
@@ -52,7 +52,7 @@ class Carta {
     }
 
     static guardarCarta(carta) {
-        const guadadas = JSON.parse(localStorage.getItem('catasGuardadas') || '[]');
+        const guadadas = JSON.parse(localStorage.getItem('cartasGuardadas') || '[]');
         const yaExiste = guadadas.some(c => c.code === carta.code);
 
         if (!yaExiste) {

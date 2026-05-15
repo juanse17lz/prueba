@@ -2,7 +2,7 @@ function mostrarCartas(lista) {
     const contenedor = document.getElementById('cartas');
     contenedor.innerHTML= '';
 
-    if (lista.lenght === 0) {
+    if (lista.length === 0) {
         contenedor.innerHTML = '<p>No hay cartas guardadas<p>';
         return;
     }
